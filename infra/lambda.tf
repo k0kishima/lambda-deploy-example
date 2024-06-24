@@ -27,4 +27,5 @@ resource "aws_lambda_function" "this" {
   role    = aws_iam_role.lambda_execution_role.arn
 
   timeout = 30
+  layers = ["arn:aws:lambda:ap-northeast-1:770693421928:layer:Klayers-p310-pandas:13"]
 }
